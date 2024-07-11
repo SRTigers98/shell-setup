@@ -7,9 +7,9 @@ neovim
 font-fira-code-nerd-font
 ripgrep
 go
-node@20
+node
 rustup-init
-openjdk@21
+openjdk
 podman
 podman-compose
 lazygit
@@ -17,3 +17,5 @@ pass
 pinentry
 bat
 eza
+fd
+zellij

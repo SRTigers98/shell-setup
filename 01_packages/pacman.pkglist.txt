@@ -18,3 +18,5 @@ pass
 pinentry
 bat
 eza
+fd
+zellij
