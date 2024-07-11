@@ -6,6 +6,7 @@ chezmoi apply -v >/dev/null
 # adjust ssh config
 ssh_config="${HOME}/.ssh/config"
 if [ ! -f "${ssh_config}" ]; then
+  mkdir -p "${HOME}/.ssh"
   touch "${ssh_config}"
   echo "created ${ssh_config}"
 fi
@@ -19,6 +20,7 @@ fi
 # adjust gpg config
 gpg_agent_config="${HOME}/.gnupg/gpg-agent.conf"
 if [ ! -f "${gpg_agent_config}" ]; then
+  mkdir -p "${HOME}/.gnupg"
   touch "${gpg_agent_config}"
   echo "created ${gpg_agent_config}"
 fi
