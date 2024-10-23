@@ -19,3 +19,5 @@ bat
 eza
 fd
 zellij
+wezterm
+thefuck
