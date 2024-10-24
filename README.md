@@ -15,13 +15,6 @@ Supported package managers are
 - Pacman
 - Homebrew
 
-## Emulator Setup
-
-You have to setup your terminal emulator to match the following conditions:
-
-- Font: "FiraCode Nerd Font"
-- Color Theme: [Nord](https://www.nordtheme.com/ports)
-
 ## Dotfiles
 
 To setup the dotfiles and configure the ssh and gpg configuration run:
@@ -36,22 +29,40 @@ To update the dotfiles to the latest version run:
 chezmoi update
 ```
 
+## Emulator Setup
+
+The recommended and configured terminal emulator is [wezterm](https://wezfurlong.org/wezterm/index.html).
+Wezterm is installed along with the packages and is configured in the dotfiles.
+
 ## NeoVim Configuration
 
 You can find the NeoVim configuration along with the documentation [here](https://github.com/SRTigers98/nvchad-config).
 
 ## Terminal Multiplexer
 
-To use the specific terminal multiplexer run the provided command at shell startup.
-The name _default_ can be replaced with any other name.
+You can use either [tmux](https://github.com/tmux/tmux)
+or [ZelliJ](https://github.com/zellij-org/zellij) as terminal multiplexer.
 
-### tmux
+### tmux (recommended)
+
+To start a new tmux session, run the following command:
 
 ```sh
 tmux new-session -A -s default
 ```
 
+Initially you have to setup the [Tmux Plugin Manager](https://github.com/tmux-plugins/tpm).
+To install it run the following command:
+
+```bash
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+```
+
+Then you can install all plugins by pressing `Ctrl+a+I` while tmux is running.
+
 ### Zellij
+
+To start a new ZelliJ session, run the following command:
 
 ```sh
 zellij attach --create default
