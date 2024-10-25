@@ -36,7 +36,7 @@ Wezterm is installed along with the packages and is configured in the dotfiles.
 
 ## NeoVim Configuration
 
-You can find the NeoVim configuration along with the documentation [here](https://github.com/SRTigers98/nvchad-config).
+You can find the NeoVim configuration along with the documentation [here](https://github.com/SRTigers98/nvim-config).
 
 ## Terminal Multiplexer
 
