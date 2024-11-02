@@ -1,5 +1,7 @@
 # Shell Setup
 
+> :warning: Merged into [dotfiles](https://github.com/SRTigers98/dotfiles)!
+
 Setup guide for my personal shell configuration.
 
 ## Packages
